@@ -1,0 +1,757 @@
+{
+  "schema": 1,
+  "release_date": "2026-10-20",
+  "kind": "public source copy; identifiers anonymized, original files retained privately",
+  "files": [
+    {
+      "path": "integration/host-workflow/Backup-Windows.ps1",
+      "source": "work/sp7-dualboot-20261019/Backup-Windows.ps1",
+      "public_sha256": "9b17a973f04bba3a200700ae96e027a0e6a5d5311fc62227aae468733e0ae3ca",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/Read-DualbootPreflight.ps1",
+      "source": "work/sp7-dualboot-20261019/Read-DualbootPreflight.ps1",
+      "public_sha256": "52514d189596f970550cad6cb21bdbe02a8362882f0ff8ccf620132530a43eb2",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/Read-HWiNFO-Header-v2.ps1",
+      "source": "work/sp7-dualboot-20261019/Read-HWiNFO-Header-v2.ps1",
+      "public_sha256": "fdae07cc37bca7c4732d588162394ac1a0cf99004ede57edffb4ac5f6f286c3f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/Read-HWiNFO-Header.ps1",
+      "source": "work/sp7-dualboot-20261019/Read-HWiNFO-Header.ps1",
+      "public_sha256": "4804cb0422045d2843a53c6ee1a218cdd657ef0888e19e20a6725f08b04b9bed",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/Read-HWiNFO-Temperatures.ps1",
+      "source": "work/sp7-dualboot-20261019/Read-HWiNFO-Temperatures.ps1",
+      "public_sha256": "dac06d80024033873d0cf16e6a9db469cd1a47534087f48858aeb46e75192464",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/Read-SecureBootPublicPolicy.ps1",
+      "source": "work/sp7-dualboot-20261019/Read-SecureBootPublicPolicy.ps1",
+      "public_sha256": "bdad4bc7215d5c39880d916c7584e77a8014b5dcd5ec3669cc9c3fbaf6a3f549",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/Resize-Manjaro-Copy.py",
+      "source": "work/sp7-dualboot-20261019/Resize-Manjaro-Copy.py",
+      "public_sha256": "f3251c4a7f11eab7e01ea477f8792381b95d7df4b1de6d7992657553bbd8aa0f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/Shrink-Windows-Only.approved-20261019.ps1",
+      "source": "work/sp7-dualboot-20261019/Shrink-Windows-Only.approved-20261019.ps1",
+      "public_sha256": "837ebee8a766df5dedf152eb3ec19c4d19e06fd587f18cdf9f0f5c2fe508ae2a",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/Shrink-Windows-Only.candidate.ps1",
+      "source": "work/sp7-dualboot-20261019/Shrink-Windows-Only.candidate.ps1",
+      "public_sha256": "93e65902b54105ba52b0f2435ea1561be50aa117430620338cf70807e37a4f5f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/adjust-restored-config.py",
+      "source": "work/sp7-dualboot-20261019/adjust-restored-config.py",
+      "public_sha256": "00aa1a0846186427493c7b79db36be979b82eb7149d218c9a72acf3ee047505c",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/apply-readable-grub.py",
+      "source": "work/sp7-dualboot-20261019/apply-readable-grub.py",
+      "public_sha256": "737c6ffe2b30fc7948bb64573ad6b09dd4cab83c589f7816dc20d2436d9bf387",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/apply-windows-grub-fix.py",
+      "source": "work/sp7-dualboot-20261019/apply-windows-grub-fix.py",
+      "public_sha256": "6b139f707e1a4c8aed5269c8efd65fdec320325e4d7cfb30991314314f068ed1",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/audit-and-backup-shrink.py",
+      "source": "work/sp7-dualboot-20261019/audit-and-backup-shrink.py",
+      "public_sha256": "ccd18dbefbbd113d86f165fb7f484cfdb1bf49bd680b539b775e387a4bc3aff3",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/authorize-local-copy-resize.py",
+      "source": "work/sp7-dualboot-20261019/authorize-local-copy-resize.py",
+      "public_sha256": "1c08852e2056dd9c239f687047433e9cbfac457211aa1f89b2810ba51bd4b9a1",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/backup-direct-to-backup-disk-attempt2.py",
+      "source": "work/sp7-dualboot-20261019/backup-direct-to-backup-disk-attempt2.py",
+      "public_sha256": "373c747176c5107ec44f4d6a3d7f30d66509cdac4067dc6af56cbc4466fcd2ef",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/backup-direct-to-backup-disk.py",
+      "source": "work/sp7-dualboot-20261019/backup-direct-to-backup-disk.py",
+      "public_sha256": "67e0eebdfc05fd19ac0df55903d00d072bbfb313c9dfaf28b81fd0d1abe81c03",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/backup-direct-to-host.py",
+      "source": "work/sp7-dualboot-20261019/backup-direct-to-host.py",
+      "public_sha256": "6ba8ba58059030e8a84590b48511e98e6f8ad8871c103b8db6c15e8a2c991057",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/backup-disk-metadata-to-host.py",
+      "source": "work/sp7-dualboot-20261019/backup-disk-metadata-to-host.py",
+      "public_sha256": "a41945aa75aecc2542eae240f611c00a9dc273c33a7ca5c606bbdb8da20b4e15",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/backup-efi-before-menu.py",
+      "source": "work/sp7-dualboot-20261019/backup-efi-before-menu.py",
+      "public_sha256": "2f34c1d683905b624bf3c51f17c531fa37d8f4a64e0443eb734d8ec338743bd5",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/backup-readable-grub-before.py",
+      "source": "work/sp7-dualboot-20261019/backup-readable-grub-before.py",
+      "public_sha256": "fe3228017bdc68fb3b74885af40b3f79b3aaa3973d20d4ace3f8c3ef3f9e92f1",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/backup-windows-grub-before-fix.py",
+      "source": "work/sp7-dualboot-20261019/backup-windows-grub-before-fix.py",
+      "public_sha256": "c4f062618f1492a493c83ad8e9dd442fd5dc12532df42aa7891d58e8df09bda3",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/build-dark-raw-20261020.py",
+      "source": "work/sp7-dualboot-20261019/build-dark-raw-20261020.py",
+      "public_sha256": "80f00299521195ace4196358753e4e9d02e7ba139394654bf7111237af451c8e",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/build-dual-face-20261020.py",
+      "source": "work/sp7-dualboot-20261019/build-dual-face-20261020.py",
+      "public_sha256": "5229436e0374bf931560e20cf80936009b270534f2e5ef059d50a8e8dcde197f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/check-connection.py",
+      "source": "work/sp7-dualboot-20261019/check-connection.py",
+      "public_sha256": "9dd9b3da694df118359a3cea81c1e0996c6dbfb73d2fd7c41715ffdb91f3853d",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/check-physical-btrfs.py",
+      "source": "work/sp7-dualboot-20261019/check-physical-btrfs.py",
+      "public_sha256": "5c6573a2f838540a040f1319cfdbdd3025da1df8ba9945e48d0725678013597d",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/collect-preboot-temperatures.py",
+      "source": "work/sp7-dualboot-20261019/collect-preboot-temperatures.py",
+      "public_sha256": "aa18b2f8cb5eb54baa40ce436efe309c41b832885da97c61f8aa683a3503614b",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/complete-live-v2-console-check.py",
+      "source": "work/sp7-dualboot-20261019/complete-live-v2-console-check.py",
+      "public_sha256": "3355379e10baf8e33d180620284789d158d37957c23ceb3658e65df30bbf476f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/complete-live-v3-repaired-config-check.py",
+      "source": "work/sp7-dualboot-20261019/complete-live-v3-repaired-config-check.py",
+      "public_sha256": "8ac800581331107200edc7ba0817fb523f3baaaceb7cdbbdbf6361ba7737fc37",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/complete-live-vm-console-check.py",
+      "source": "work/sp7-dualboot-20261019/complete-live-vm-console-check.py",
+      "public_sha256": "ea01afce48d96236d3d3cfa0d91904f9d88022cced733e52df00e69b9d97cc01",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/create-physical-partition5.py",
+      "source": "work/sp7-dualboot-20261019/create-physical-partition5.py",
+      "public_sha256": "5752d1595f0ee79ce79dcaf1ae2ed39265236498fa88546210768afb51eb3c24",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/create-signed-firmware-entry.py",
+      "source": "work/sp7-dualboot-20261019/create-signed-firmware-entry.py",
+      "public_sha256": "898336c373b89fd1ed1b08880ece67968d3372fc3c1a747894e7d273d2671800",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/final-guard-and-shutdown.py",
+      "source": "work/sp7-dualboot-20261019/final-guard-and-shutdown.py",
+      "public_sha256": "15b576d76d0ce8b158c2616839c48a82c52485010661d375603ab8bc6491a05b",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/final-installed-audit.py",
+      "source": "work/sp7-dualboot-20261019/final-installed-audit.py",
+      "public_sha256": "ddc77ed059150a1c07f7c502a8d9698dad425a0b457a3cb7b98e70f5228ba60b",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/finish-backup-validation.py",
+      "source": "work/sp7-dualboot-20261019/finish-backup-validation.py",
+      "public_sha256": "d68be29c4fcd7b3fb45f9ef090c89e5b596041b4477935f2910a55818038963b",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/gpt_partition5.py",
+      "source": "work/sp7-dualboot-20261019/gpt_partition5.py",
+      "public_sha256": "d46ab80048d0c89ad701dd24a761664461e073dffa3a95fcc3a7b08f1a255764",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/inspect-before-efi-write.py",
+      "source": "work/sp7-dualboot-20261019/inspect-before-efi-write.py",
+      "public_sha256": "561001880cb5dfb5fb3c47c8372119c242565b2d9842d2c980f5e6f7b095d4bc",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/inspect-live-v3-effective-config.py",
+      "source": "work/sp7-dualboot-20261019/inspect-live-v3-effective-config.py",
+      "public_sha256": "703c2c53475aa8637f49872413e3735248cda4efa2dc64eea783661a0742d035",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/inspect-restored-manjaro.py",
+      "source": "work/sp7-dualboot-20261019/inspect-restored-manjaro.py",
+      "public_sha256": "d14cd8bcc9396295d1bb9aaaa35ce367594af30c0e1e860de4872f37ab6caa27",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/install-additive-usb-overlay.py",
+      "source": "work/sp7-dualboot-20261019/install-additive-usb-overlay.py",
+      "public_sha256": "7106c66511d5643dfb334da2c4b6fa8af8eb5c578d9e160d7636aabd678e5c2e",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/install-signed-efi-files.py",
+      "source": "work/sp7-dualboot-20261019/install-signed-efi-files.py",
+      "public_sha256": "48a654a41c51e34ce8d42115cf8cc344f719fdaa0792b6a069dca0de20b5f511",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/install-wifi-usb-update.py",
+      "source": "work/sp7-dualboot-20261019/install-wifi-usb-update.py",
+      "public_sha256": "9ac86f7b34cdedf2b16514e44e0e569eef807b8cf6ed1c5d2261e6c46861b2dd",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/installed_transport.py",
+      "source": "work/sp7-dualboot-20261019/installed_transport.py",
+      "public_sha256": "c6649f4608a595026cf19e95f5f846afa188474cd68177eddcde90685d67f2ed",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/live_transport.py",
+      "source": "work/sp7-dualboot-20261019/live_transport.py",
+      "public_sha256": "2b42fe35014aa8a851a90f90b9753ab47d631b05ee860146868841951465b51f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/package-manjaro-dualboot-copy.py",
+      "source": "work/sp7-dualboot-20261019/package-manjaro-dualboot-copy.py",
+      "public_sha256": "4c7d803c28368a30887ae8ab5810a3b94223d10ae9792ff7eaebe261f0e0d13c",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/partition5-guest-test.sh",
+      "source": "work/sp7-dualboot-20261019/partition5-guest-test.sh",
+      "public_sha256": "d658fb8e3473a0907869fe3107f9f2c85bb847497d437403b14317cfed12ef17",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/partition5-mbr-guest-test.sh",
+      "source": "work/sp7-dualboot-20261019/partition5-mbr-guest-test.sh",
+      "public_sha256": "4d1f10d9753abc3e452c570a7dee0bd8e468a9250675545897c49f3590efae72",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/prepare-firmware-entry.py",
+      "source": "work/sp7-dualboot-20261019/prepare-firmware-entry.py",
+      "public_sha256": "fa4581310c3bf8e5813294a4869d472ad022362f1ef25c93a1d6e76ac246e7b1",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/prepare-live-usb-overlay.py",
+      "source": "work/sp7-dualboot-20261019/prepare-live-usb-overlay.py",
+      "public_sha256": "1460adeb12dce90e3a72d3bf178277c90b1c214c482d945c12d9294116610698",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/prepare-live-v2-test.py",
+      "source": "work/sp7-dualboot-20261019/prepare-live-v2-test.py",
+      "public_sha256": "6a55be32a69450d7aefc7351bf2bdde53ed21093652eec6b1806c637c8d65bfa",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/prepare-mbr-preservation-vm.py",
+      "source": "work/sp7-dualboot-20261019/prepare-mbr-preservation-vm.py",
+      "public_sha256": "7337a5376bf024a05bc5c7676634f28f36e03c5ca04eef19822173661ef2705f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/prepare-module-diagnostic-v7.py",
+      "source": "work/sp7-dualboot-20261019/prepare-module-diagnostic-v7.py",
+      "public_sha256": "0fb85fc3c02d7cc1d169bc5d4f7810d1960bf73538913d7c4d88cff700c855e9",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/prepare-partition5-vm.py",
+      "source": "work/sp7-dualboot-20261019/prepare-partition5-vm.py",
+      "public_sha256": "97bff5d8debbe21a7925464caddd097ee610584f7e4a325bc8937804c67921da",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/read-current-ir-drivers.py",
+      "source": "work/sp7-dualboot-20261019/read-current-ir-drivers.py",
+      "public_sha256": "0bb74f81df97ae56fab9acc9f470fdaf773b05af461a2530d93cd71fc4a566d9",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/read-hwinfo.py",
+      "source": "work/sp7-dualboot-20261019/read-hwinfo.py",
+      "public_sha256": "00f12e96d249d44dfcec9f13f8ea08897634ea97f6f223d5b4c6c30b46d143e7",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/read-installed-first-boot.py",
+      "source": "work/sp7-dualboot-20261019/read-installed-first-boot.py",
+      "public_sha256": "6e8c904d8f9efe33ae04b6076c8ee35b43fd8f769b665006018efb436efcded2",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/read-plasma-network-error.py",
+      "source": "work/sp7-dualboot-20261019/read-plasma-network-error.py",
+      "public_sha256": "add7246d5a9286d6ebc1b7fdec390f241210daecdd0faaf028b9f1568de85553",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/reboot-installed-for-windows-test.py",
+      "source": "work/sp7-dualboot-20261019/reboot-installed-for-windows-test.py",
+      "public_sha256": "9aaf1e0b07417aee1ef82a931e090d77d81ee4b530ded9c00d44ad3ebe1443fd",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/reboot-live-to-windows.py",
+      "source": "work/sp7-dualboot-20261019/reboot-live-to-windows.py",
+      "public_sha256": "39cc0f490a03a03fbc3d54dc8d7a5f954d12a2894f03476460e152784cb516b9",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/restore-desktop-widgets.py",
+      "source": "work/sp7-dualboot-20261019/restore-desktop-widgets.py",
+      "public_sha256": "72d5cd22305c31551c82a080ae2bdbd46b48bc84465eebe8b2dcbeffa8384208",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/restore-local-copy-v2.py",
+      "source": "work/sp7-dualboot-20261019/restore-local-copy-v2.py",
+      "public_sha256": "96eeb7c7964130e175ec805368c24da44cdd35e7b28f2173c18ca7ecd8779b4c",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/restore-local-copy-v3.py",
+      "source": "work/sp7-dualboot-20261019/restore-local-copy-v3.py",
+      "public_sha256": "aa43ec47bf9b67c492a0b5df58e11d8d574d4ecbc2f61833876e7415005bd28f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/restore-local-copy-v4.py",
+      "source": "work/sp7-dualboot-20261019/restore-local-copy-v4.py",
+      "public_sha256": "c223fbb051841cedfceb95a01458f74b4b84d9fcf71971c8fabf37de2ffb826b",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/restore-local-copy-v5.py",
+      "source": "work/sp7-dualboot-20261019/restore-local-copy-v5.py",
+      "public_sha256": "63d2c0c476279913a1b145102cae0c8d107f51cff0aa39ddbc0fa3c7de15b58f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/restore-local-copy.py",
+      "source": "work/sp7-dualboot-20261019/restore-local-copy.py",
+      "public_sha256": "eb655d7ad2f6ce982970fc80ea28058df40145521c3209dcb23cde9e3ce13158",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/run-approved-shrink.py",
+      "source": "work/sp7-dualboot-20261019/run-approved-shrink.py",
+      "public_sha256": "a5d35f725f080e35a73ca629eaea0e295e1602f62482fcfbbbc46ea481a4116b",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/run-readonly-02.py",
+      "source": "work/sp7-dualboot-20261019/run-readonly-02.py",
+      "public_sha256": "474d9313b84e9153df0145839d7284407709681e8b9fe8708698cdaae2a98519",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/run-readonly.py",
+      "source": "work/sp7-dualboot-20261019/run-readonly.py",
+      "public_sha256": "43c8601eb3ae195562663ea939e5154c658fc2fa439773b493a8e13265f8d8e8",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/save-dualboot-completion.py",
+      "source": "work/sp7-dualboot-20261019/save-dualboot-completion.py",
+      "public_sha256": "82c3990cf9359c1c2f4a5c068b7d589553957bfae6c23c278eb320ffb2efe9e3",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/save-readable-grub-receipt.py",
+      "source": "work/sp7-dualboot-20261019/save-readable-grub-receipt.py",
+      "public_sha256": "f3e31a9c260b7de5c2f8c964bf9511c7c578ecc048b6a247319fa4a2ceea2186",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/ssh-config-guest-final-test.sh",
+      "source": "work/sp7-dualboot-20261019/ssh-config-guest-final-test.sh",
+      "public_sha256": "e6a9833325e3c68c0416c3f2a348da36dfda4e48cd526806f1b6893d77337fa6",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/ssh-config-guest-repair-test.sh",
+      "source": "work/sp7-dualboot-20261019/ssh-config-guest-repair-test.sh",
+      "public_sha256": "8143c4b2fd5b13c63a350b130c322e1a97a2fa8273514b2680f24b50749c813b",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/start-windows-backup-v2.py",
+      "source": "work/sp7-dualboot-20261019/start-windows-backup-v2.py",
+      "public_sha256": "e3eb73c4d384f23b64d8597fdcd47f717fb121e0464bc9f6baf2d027f29eaa06",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/start-windows-backup-v3.py",
+      "source": "work/sp7-dualboot-20261019/start-windows-backup-v3.py",
+      "public_sha256": "6e44d271ad5f05eff5500c2f611e15047e75867e2556211d7298e7b611ee6546",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/start-windows-backup.py",
+      "source": "work/sp7-dualboot-20261019/start-windows-backup.py",
+      "public_sha256": "c2bc2b447d45354960fdb61dc641964c94595e9b9588b34e276febcfa2e9c686",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/stream-manjaro-to-partition5.py",
+      "source": "work/sp7-dualboot-20261019/stream-manjaro-to-partition5.py",
+      "public_sha256": "a8cfab6450e9822660fdd49cebe97af40ae79036af5a699c7b44c87ce59c2b2e",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-dedicated-final-menu.py",
+      "source": "work/sp7-dualboot-20261019/test-dedicated-final-menu.py",
+      "public_sha256": "591123f4f3fa852229946549599bc715239b8275b035a05dae6f1b497853d8c6",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-dedicated-grub-menu.py",
+      "source": "work/sp7-dualboot-20261019/test-dedicated-grub-menu.py",
+      "public_sha256": "685d14e52cf49d74773918203e959ecf538556f5151dc6f22c56cf8b8ccf7c52",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-direct-stream.py",
+      "source": "work/sp7-dualboot-20261019/test-direct-stream.py",
+      "public_sha256": "0065d9ba4761da6b2385642330bb1f06a03c3347aa6b8246cdce3d5f73a71034",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-grub-uuid-p5.py",
+      "source": "work/sp7-dualboot-20261019/test-grub-uuid-p5.py",
+      "public_sha256": "d6a890178178cba6d23561301d4763355d49e3bd9df7a47c4d20b2fd8c046579",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-live-ssh-config-final.py",
+      "source": "work/sp7-dualboot-20261019/test-live-ssh-config-final.py",
+      "public_sha256": "0ac4a2bf0d0957483a7623bd0361d0b636ecbb6a6771e909ecf91a03c1e07cda",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-old-module-normal-loader.py",
+      "source": "work/sp7-dualboot-20261019/test-old-module-normal-loader.py",
+      "public_sha256": "fd8f82603998407011063e2d119f6d256f1485e364fb028739508e3f6d6d6af1",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-partition5-vm.py",
+      "source": "work/sp7-dualboot-20261019/test-partition5-vm.py",
+      "public_sha256": "a7001f69eb2224e793510f3c16903ab079e3f74c754bed4c52be0ebf8d6cbc2e",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-protective-mbr-vm.py",
+      "source": "work/sp7-dualboot-20261019/test-protective-mbr-vm.py",
+      "public_sha256": "62be80f3db831f2f6f1975a08cb454feb87bbad776f372f24a0cd15e26886150",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-readable-built-in-final-grub-vm.py",
+      "source": "work/sp7-dualboot-20261019/test-readable-built-in-final-grub-vm.py",
+      "public_sha256": "ebefa77e0c3cfe8292a9d2f2f53273fa657dfe3d4c7304dc1a24988b60461b22",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-readable-built-in-grub-vm.py",
+      "source": "work/sp7-dualboot-20261019/test-readable-built-in-grub-vm.py",
+      "public_sha256": "d5e43742dd3f6c165ef65d0046d1b9de8b77a587b4d456fcd6c4b15c6fa8b4b3",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-readable-grub-vm.py",
+      "source": "work/sp7-dualboot-20261019/test-readable-grub-vm.py",
+      "public_sha256": "9aacb1df9c5a8b8a2d9cea6653e853be18cc25bfc75ac83d63d7ecacf788ffc0",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-readable-themed-grub-vm.py",
+      "source": "work/sp7-dualboot-20261019/test-readable-themed-grub-vm.py",
+      "public_sha256": "e8c01b89f454f18566d680beb67f47fa2c116597c03cf0378447fc8d779f93d7",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-debian-grub-p5.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-debian-grub-p5.py",
+      "public_sha256": "618ffc1d4b1475aa26f580b7066235cd4337873be2cfbee7046d9bb51e3659e5",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-grub-p5.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-grub-p5.py",
+      "public_sha256": "66d8ee67554bd87975def14d6dd7ecfed4d9cb1c21259e6209ce5845fd212112",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-kernel-default-policy-v8.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-kernel-default-policy-v8.py",
+      "public_sha256": "e1680cb85dfb34803bceb97ba69521c898504e9175079a8e7b81a2e094bd18da",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-kernel-modules-v2.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-kernel-modules-v2.py",
+      "public_sha256": "a37c76d68ee1a5b4ee56bb9e2d4493cafddc4aee2aaf289e6c4090d03cd23cd9",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-kernel-modules-v3.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-kernel-modules-v3.py",
+      "public_sha256": "2361e5b6e438945cb8e19f1cb5ceb627a6c6f9ec884256011141f88e5b0bbfe7",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-kernel-modules-v4.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-kernel-modules-v4.py",
+      "public_sha256": "b042b6f3f04edeaa09916dd5fc5708368de7a2ef22443de0f6a75d045694c84f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-kernel-modules-v5.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-kernel-modules-v5.py",
+      "public_sha256": "2db8e42a815429ee516eecb0fab528be9e16c61b0ade61b0abfa994ee6d62714",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-kernel-modules-v6.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-kernel-modules-v6.py",
+      "public_sha256": "90fd39e90c042005dce3feca60b63469b1b20295a8a3cbb3a05cd89688cdf601",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-kernel-modules-v7.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-kernel-modules-v7.py",
+      "public_sha256": "f4573aeebe89f809e62e44bb4b8aa47fd1a5fcd07dab36d39b78392a31598e7c",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-kernel-modules.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-kernel-modules.py",
+      "public_sha256": "73b659f137e431e1c4529092bbb56c1e1b45a90014f8525d36bfe0a3bbd13241",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-live-v2.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-live-v2.py",
+      "public_sha256": "bf6e3b43f39b047e59b72aa17a75ceecd61f1e7e1fd2ed69f83f0a9294b1ecd9",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-live-v3.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-live-v3.py",
+      "public_sha256": "9e6a025d9051747dbd52a8b911bd409c113d6227ddc51a2417599ae34f4f2092",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-secureboot-live.py",
+      "source": "work/sp7-dualboot-20261019/test-secureboot-live.py",
+      "public_sha256": "152fb5dd8576d2632c79cd16e35f7ee31c7cb49b6b0cfeaff853de3b449995fd",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-wifi-live-guest-v2.sh",
+      "source": "work/sp7-dualboot-20261019/test-wifi-live-guest-v2.sh",
+      "public_sha256": "55f944cd3a3df7f4c2696e1a37796cba98488b9317419214eb8d42f0ff53229e",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-wifi-live-guest.sh",
+      "source": "work/sp7-dualboot-20261019/test-wifi-live-guest.sh",
+      "public_sha256": "cfd51649b69428cec26b29f82f2c2ad14f371519486c59916703368554eee555",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-wifi-live-vm-v2.py",
+      "source": "work/sp7-dualboot-20261019/test-wifi-live-vm-v2.py",
+      "public_sha256": "fa728687b1a3bfb1d2eb92c70c8b760c5bfb6091969986d0d4d3133b4c00bd99",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-wifi-live-vm.py",
+      "source": "work/sp7-dualboot-20261019/test-wifi-live-vm.py",
+      "public_sha256": "200a29f3ce3cf17059b85d29c3ee037c003df273a6136d33274dac3c9183c4b5",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/test-windows-root-fix-vm.py",
+      "source": "work/sp7-dualboot-20261019/test-windows-root-fix-vm.py",
+      "public_sha256": "04f877c4b71b8e37e0c96240fa39d26dc658c1622016c82cf20a3de882662bdb",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/verify-windows-after-grub-boot.py",
+      "source": "work/sp7-dualboot-20261019/verify-windows-after-grub-boot.py",
+      "public_sha256": "2d0b036829fe0e7816f76886c82a7dd74da78db8ed4c4ad3b4f647e5a707bd5d",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/verify-windows-restore-on-backup-disk.py",
+      "source": "work/sp7-dualboot-20261019/verify-windows-restore-on-backup-disk.py",
+      "public_sha256": "24d4b2c22616d2795e162fd439a3188b7d2f35f4ef6577ce81d9961493edafe7",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/windows_transport.py",
+      "source": "work/sp7-dualboot-20261019/windows_transport.py",
+      "public_sha256": "b61f341049390f0b5b7e79b605eb99afa3fe8a2bfb118f7a5543ce2c4ab17b67",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/host-workflow/workaround-plasma-widgets.py",
+      "source": "work/sp7-dualboot-20261019/workaround-plasma-widgets.py",
+      "public_sha256": "0af1e6ea2ba10c3771121e11c45938d6992b5a46ab39c9e9f5adf75f9e4e6d8e",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/readable-grub-candidate/apply-reviewed.ps1",
+      "source": "work/sp7-dualboot-20261019/readable-grub-candidate/apply-reviewed.ps1",
+      "public_sha256": "44bb6b1c490c1898cf74e1e70cceab75d8e281cfa710550873848e37b63d6b8a",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/readable-grub-candidate/grub-built-in.cfg",
+      "source": "work/sp7-dualboot-20261019/readable-grub-candidate/grub-built-in.cfg",
+      "public_sha256": "7504aeadd0fe26e022e97e3f922b7bac4c46d8250a354591158d2f3fec7715f1",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/readable-grub-candidate/grub-readable-theme.cfg",
+      "source": "work/sp7-dualboot-20261019/readable-grub-candidate/grub-readable-theme.cfg",
+      "public_sha256": "83c8ac5f2d40487591f3432682a03619f5424c5b82c84373e906cd1214691a38",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/readable-grub-candidate/grub.cfg",
+      "source": "work/sp7-dualboot-20261019/readable-grub-candidate/grub.cfg",
+      "public_sha256": "ad17480a30a31b59388c447ef07d16118799fcd1e9c6e767fa6f18b77d9ce72d",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/reboot-policy/reboot_guard.py",
+      "source": "outputs/SP7-IR-projekt/surface-home/development/reboot-policy/reboot_guard.py",
+      "public_sha256": "abbac19dd74301b06f1a47b0c2bc9a30f58b735823c0d3b21f1cacb79c4c3339",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/reboot-policy/test_reboot_guard.py",
+      "source": "outputs/SP7-IR-projekt/surface-home/development/reboot-policy/test_reboot_guard.py",
+      "public_sha256": "9cc4f21cac4c6af5e678d4ab0a6ac49426fa583262da4ca8bc45972bab61ca01",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/secureboot-candidate/embedded.cfg",
+      "source": "work/sp7-dualboot-20261019/secureboot-candidate/embedded.cfg",
+      "public_sha256": "5e106b657e5dc85f7f28a022d27293f0bcc4bc38703b3fb573e0693d3cab14c5",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/secureboot-source-review/linux-machine_keyring.c",
+      "source": "work/sp7-dualboot-20261019/secureboot-source-review/linux-machine_keyring.c",
+      "public_sha256": "0d5fdef4c50db18f4b95ec82e45f61598af5bf970803b7216a9cf6d3213d36bc",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/secureboot-source-review/local-6.19.8-load_uefi.c",
+      "source": "work/sp7-dualboot-20261019/secureboot-source-review/local-6.19.8-load_uefi.c",
+      "public_sha256": "a3ceaf8ad33201a57236b4fe99c418109db8987dbc26a46b59d1a8e924d27fd9",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/secureboot-source-review/shim-mok.c",
+      "source": "work/sp7-dualboot-20261019/secureboot-source-review/shim-mok.c",
+      "public_sha256": "e9fd336c4451987f282a3d7497a2958c1b80d70db9c2f581cd6c7478adc8dcaf",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/secureboot-source-review/surface-0001-secureboot.patch",
+      "source": "work/sp7-dualboot-20261019/secureboot-source-review/surface-0001-secureboot.patch",
+      "public_sha256": "f85f6fd16a075469f5aaaf7cfc1a6d67d5d774da0eea0c00dac1cee06a516f46",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/usb-overlay/EFI/Boot/grub.cfg",
+      "source": "work/sp7-dualboot-20261019/usb-overlay/EFI/Boot/grub.cfg",
+      "public_sha256": "6735113d81389d346d525233c973c9c65822dde04fcaad23c611dce983682b13",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/usb-overlay/SP7-DUALBOOT/enable-temporary-ssh.sh",
+      "source": "work/sp7-dualboot-20261019/usb-overlay/SP7-DUALBOOT/enable-temporary-ssh.sh",
+      "public_sha256": "9d33dce11f016211489350f6d455b53341ad919a523f5d9cb2fe580be64a2a8f",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/workbench/install.py",
+      "source": "outputs/SP7-IR-projekt/surface-home/development/workbench/install.py",
+      "public_sha256": "8e45c29ccc335987aa3ed1b13c56af5f0dc9d1aea977d7b85905a7c5df9165f6",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/workbench/test_workbench.py",
+      "source": "outputs/SP7-IR-projekt/surface-home/development/workbench/test_workbench.py",
+      "public_sha256": "644533390da75a2dd8e0a29f6d83ae265e2813956500ffe7d5370d5501d35dd0",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    },
+    {
+      "path": "integration/workbench/workbench.py",
+      "source": "outputs/SP7-IR-projekt/surface-home/development/workbench/workbench.py",
+      "public_sha256": "d0311ec7e970d0284e921a04907a90dd7aab2a19291eabbe276ee9fe81215f93",
+      "adaptation": "public example identifiers/paths; no live deployment binding"
+    }
+  ]
+}
