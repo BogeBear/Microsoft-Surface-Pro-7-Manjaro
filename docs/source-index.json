@@ -406,18 +406,6 @@
       "adaptation": "public example identifiers/paths; no live deployment binding"
     },
     {
-      "path": "integration/host-workflow/save-dualboot-completion.py",
-      "source": "work/sp7-dualboot-20261019/save-dualboot-completion.py",
-      "public_sha256": "82c3990cf9359c1c2f4a5c068b7d589553957bfae6c23c278eb320ffb2efe9e3",
-      "adaptation": "public example identifiers/paths; no live deployment binding"
-    },
-    {
-      "path": "integration/host-workflow/save-readable-grub-receipt.py",
-      "source": "work/sp7-dualboot-20261019/save-readable-grub-receipt.py",
-      "public_sha256": "f3e31a9c260b7de5c2f8c964bf9511c7c578ecc048b6a247319fa4a2ceea2186",
-      "adaptation": "public example identifiers/paths; no live deployment binding"
-    },
-    {
       "path": "integration/host-workflow/ssh-config-guest-final-test.sh",
       "source": "work/sp7-dualboot-20261019/ssh-config-guest-final-test.sh",
       "public_sha256": "e6a9833325e3c68c0416c3f2a348da36dfda4e48cd526806f1b6893d77337fa6",
@@ -715,12 +703,6 @@
       "path": "integration/secureboot-source-review/shim-mok.c",
       "source": "work/sp7-dualboot-20261019/secureboot-source-review/shim-mok.c",
       "public_sha256": "e9fd336c4451987f282a3d7497a2958c1b80d70db9c2f581cd6c7478adc8dcaf",
-      "adaptation": "public example identifiers/paths; no live deployment binding"
-    },
-    {
-      "path": "integration/secureboot-source-review/surface-0001-secureboot.patch",
-      "source": "work/sp7-dualboot-20261019/secureboot-source-review/surface-0001-secureboot.patch",
-      "public_sha256": "f85f6fd16a075469f5aaaf7cfc1a6d67d5d774da0eea0c00dac1cee06a516f46",
       "adaptation": "public example identifiers/paths; no live deployment binding"
     },
     {

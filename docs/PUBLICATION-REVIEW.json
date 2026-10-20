@@ -1,0 +1,30 @@
+{
+  "review_date": "2026-10-20",
+  "scope": "Public source release; automated inventory plus manual provenance/notice checks, not legal certification",
+  "source_files_checked": 140,
+  "private_content_pattern_findings": 0,
+  "Python_sources_syntax_checked": 99,
+  "C_H_license_notices": {
+    "GPL-2.0": 2,
+    "BSD-2-Clause-Patent": 1
+  },
+  "technical_tests": {
+    "source_syntax_checked_files": 105,
+    "disk_operations_executed_for_publication": false
+  },
+  "excluded": [
+    "private conversations",
+    "internal agent notes and note-writing scripts",
+    "private credentials and recovery keys",
+    "raw camera data and biometric templates",
+    "models and firmware binaries",
+    "OS images, VM disks and system backups"
+  ],
+  "upstream_CSS_header_check": null,
+  "license_rules": "Per-file notices and directory exceptions apply. Root GPLv3 does not relicense Linux/Intel GPLv2 derivatives. Kernel-facing project harness/patch code stays GPLv2; independent userspace components are separate.",
+  "policies_consulted": [
+    "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies",
+    "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository"
+  ]
+}
