@@ -2,7 +2,7 @@
 
 Status: experimental source checkpoint, 2026-11-02. This is not an installable face-authentication release.
 
-The exact camera source checkpoint is [4466f3260a370cc29195d2d16076c3a912ee4106](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/4466f3260a370cc29195d2d16076c3a912ee4106/replacement), proposed in [camera pull request 1](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/pull/1).
+The exact camera source checkpoint is [876b5b1dbb5125d5ff878ff5b2d2671b2716e8e8](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/876b5b1dbb5125d5ff878ff5b2d2671b2716e8e8/replacement), proposed in [camera pull request 1](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/pull/1).
 
 ## Replacement scope
 
@@ -22,7 +22,7 @@ See the pinned camera checkpoint's replacement/TEST-EVIDENCE.json and replacemen
 
 Operational controllers must migrate the new module identity, ir_control/ir_snapshot API, three-gate readbacks and complete shutdown contract together. The read-only ir_strobe_test compatibility view does not restore the old writer. Mixing an old controller or historical build recipe with the new module is outside the tested boundary.
 
-The version-checked installation/upgrade/uninstall/rollback package remains under preparation. It must preserve the previous installation, use a verified external backup destination, reject unexpected local edits and demonstrate recovery before activation. This documentation update does not provide a driver installation command or change the historical dual-boot workflows.
+The [inactive workbench installer](../installer/README.md) now provides version-checked source installation, upgrade, uninstall and rollback with external backups. It was exercised in an isolated disposable VM. It does not install or activate camera drivers, change authentication or update historical dual-boot workflows. Persistent driver activation and a production camera controller still require a separately tested transaction.
 
 The current hardware target is Microsoft Surface Pro7 with the exact tested kernel ABI. Additional Surface models require their own DMI/hardware/kernel profiles and actual evidence. The experimental module defaults to refusing hardware probing without explicit opt-in; no unattended camera, PAM/SDDM login or biometric approval is enabled by this checkpoint.
 
@@ -32,3 +32,16 @@ Linux-derived sensor code remains GPLv2; standalone project userspace remains GP
 
 Only source, licenses and sanitized verification summaries are referenced. No private conversations, face images, embeddings, recovery keys, SSH/signing keys or model binaries are published by this update.
 
+
+## Two new captures
+
+Two separate actual presence confirmations led to two successful new captures,
+30RGB+30IR frames each. Both original coordinators passed with no errors and
+complete native/kernel/root closure, exact configuration restoration and an
+independent eight-device idle check. Private files were hash/fsync-exported
+and removed from device RAM. No images or biometric vectors are published.
+
+Fixed-orientation filtering gave one diagnostic proposal in14/14 brighter IR
+frames in each capture. A central RGB proposal window gave29/30 and17/30;
+this remains insufficient for a login reliability claim. There is no identity
+match, geometric calibration, negative-participant study or verified PAD.
