@@ -32,3 +32,11 @@ The scripts were designed for one staged restoration with explicit version, boot
 No recovery keys, private signing keys, installed-machine images, firmware binaries, OS backups, private chats or account configuration are shipped. Do not use example disk IDs as real targets. Never disable existing checks just to make an old script run.
 
 See [publication scope](docs/PUBLICATION.md), [workflow map](docs/WORKFLOWS.md), [licensing](THIRD_PARTY.md), [contributing](CONTRIBUTING.md) and [security/privacy](SECURITY.md).
+
+
+## Independent camera replacement checkpoint — 2026-11-02
+
+The camera project now has an [experimental independent source checkpoint](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/4466f3260a370cc29195d2d16076c3a912ee4106/replacement) on a separate review branch. It replaces the inherited uncertain-license OV7251 additions with a new GPLv2 lifecycle layer on the licensed Linux baseline and uses a hash-bound UINT8 proposal backend without Caffe FP16 weights.
+
+Physical object capture and bounded three-gate timer evidence are recorded there. Production controller migration, installation/upgrade/uninstall/rollback packaging and authentication/PAD validation are still pending. See [the integration boundary](docs/INDEPENDENT-CAMERA-REPLACEMENT.md) before adapting the source. The historical system workflows above remain a distinct snapshot.
+
