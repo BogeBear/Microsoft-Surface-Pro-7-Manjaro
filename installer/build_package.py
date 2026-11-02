@@ -4,8 +4,8 @@
 import argparse,hashlib,json,os,stat
 from pathlib import Path
 import sp7_setup as s
-CAMERA_MANIFEST_SHA256 = 'f29e1e39165b0c816bdf1c0cca8325400b2551b69733f48edb449136171d4db4'
-CAMERA_COMMIT = '876b5b1dbb5125d5ff878ff5b2d2671b2716e8e8'
+CAMERA_MANIFEST_SHA256 = '10f01ec3b8bac53e503383daa545384f9f1741746dc70b9b7860e84807e01bcd'
+CAMERA_COMMIT = '0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e'
 
 def build(source, output):
     source=Path(source).absolute();output=Path(output).absolute()
@@ -44,10 +44,10 @@ def build(source, output):
         files['app/'+n]=(data,0o755 if n.endswith('.sh') else 0o644)
     files['app/SHA256SUMS']=(raw,0o644)
     files['app/tools/sp7_setup.py']=(Path(__file__).with_name('sp7_setup.py').read_bytes(),0o755)
-    m=dict(format=1,version='0.2.0',profile='inactive-workbench',compatibility=dict(distribution='manjaro',arch='x86_64',product='Surface Pro 7',kernel=s.KERNEL,python_min=[3,11],glibc_min=[2,38]),activation=dict(camera=False,drivers=False,login=False,autostart=False),camera_source_commit=CAMERA_COMMIT,files={n:dict(sha256=s.digest(d),mode=mode) for n,(d,mode) in files.items()})
+    m=dict(format=1,version='0.3.0',profile='inactive-workbench',compatibility=dict(distribution='manjaro',arch='x86_64',product='Surface Pro 7',kernel=s.KERNEL,python_min=[3,11],glibc_min=[2,38]),activation=dict(camera=False,drivers=False,login=False,autostart=False),camera_source_commit=CAMERA_COMMIT,files={n:dict(sha256=s.digest(d),mode=mode) for n,(d,mode) in files.items()})
     files['manifest.json']=(s.encode(m),0o644);package=s.archive_bytes(files);s.load_package(package,s.digest(package))
     output.mkdir(parents=True,exist_ok=True)
-    dest=output/'sp7-independent-workbench-0.2.0-x86_64.tar.gz'
+    dest=output/'sp7-independent-workbench-0.3.0-x86_64.tar.gz'
     with dest.open('xb') as f:f.write(package);f.flush();os.fsync(f.fileno())
     checks=output/'SHA256SUMS'
     with checks.open('x') as f:f.write(s.digest(package)+'  '+dest.name+'\n');f.flush();os.fsync(f.fileno())

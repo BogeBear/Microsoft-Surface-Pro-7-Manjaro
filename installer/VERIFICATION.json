@@ -1,16 +1,16 @@
 {
   "date": "2026-11-02",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "profile": "inactive-workbench",
-  "camera_source_commit": "876b5b1dbb5125d5ff878ff5b2d2671b2716e8e8",
-  "source_manifest_sha256": "f29e1e39165b0c816bdf1c0cca8325400b2551b69733f48edb449136171d4db4",
-  "package_sha256": "245a7216aacd1819db1ba9b453c12e5055025aa517793c932a1a160d4fe76a1c",
-  "package_bytes": 70938,
+  "camera_source_commit": "0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e",
+  "source_manifest_sha256": "10f01ec3b8bac53e503383daa545384f9f1741746dc70b9b7860e84807e01bcd",
+  "package_sha256": "174c86b79882d9b60cd22067779b1c167aed7dc94e8fb2b60ce58a4104fa1b58",
+  "package_bytes": 73158,
   "VM_root_installer_tests": 39,
   "VM_root_builder_tests": 6,
-  "VM_installed_Python_tests_total": 58,
+  "VM_installed_Python_tests_total": 65,
   "VM_installed_Python_root_only_skips": 18,
-  "VM_installed_effective_nonroot_Python_tests": 40,
+  "VM_installed_effective_nonroot_Python_tests": 47,
   "VM_C_gate_and_session_assertions": 4883,
   "VM_install_uninstall_restore": true,
   "VM_network": false,
@@ -23,5 +23,8 @@
   "driver_source_kit_seven_modules_compiled": true,
   "driver_source_kit_hardware_loaded": false,
   "production_driver_installer_complete": false,
-  "secure_biometrics_or_PAD_verified": false
+  "secure_biometrics_or_PAD_verified": false,
+  "actual_0_2_to_0_3_upgrade_and_rollback": true,
+  "spatial_RGB_tests": 7,
+  "spatial_RGB_new_physical_validation": false
 }

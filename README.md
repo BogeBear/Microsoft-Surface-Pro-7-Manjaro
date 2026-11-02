@@ -36,7 +36,12 @@ See [publication scope](docs/PUBLICATION.md), [workflow map](docs/WORKFLOWS.md),
 
 ## Independent camera replacement checkpoint — 2026-11-02
 
-The camera project now has an [experimental independent source checkpoint](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/876b5b1dbb5125d5ff878ff5b2d2671b2716e8e8/replacement) on a separate review branch. It replaces the inherited uncertain-license OV7251 additions with a new GPLv2 lifecycle layer on the licensed Linux baseline and uses a hash-bound UINT8 proposal backend without Caffe FP16 weights.
+The camera project now has an [experimental independent source checkpoint](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e/replacement) on a separate review branch. It replaces the inherited uncertain-license OV7251 additions with a new GPLv2 lifecycle layer on the licensed Linux baseline and uses a hash-bound UINT8 proposal backend without Caffe FP16 weights.
 
 Physical object and two new presence-authorized face captures, plus bounded three-gate timer evidence, are recorded there. The [inactive workbench installer](installer/README.md) provides VM-tested source installation, upgrade, uninstall and rollback. Persistent driver installation, production controller migration and authentication/PAD validation remain pending. See [the integration boundary](docs/INDEPENDENT-CAMERA-REPLACEMENT.md) before adapting the source. The historical system workflows above remain a distinct snapshot.
 
+
+The optional nine-window RGB proposal candidate improves the second captured
+sequence from17/30 to25/30 at the same threshold, with29/30 on the first.
+This is exploratory analysis of the same two captures, not independent new
+physical validation. No identity or full-field person-exclusion claim follows.

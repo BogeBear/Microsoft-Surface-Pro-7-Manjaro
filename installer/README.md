@@ -1,6 +1,6 @@
 # Independent SP7 workbench installer
 
-Version0.2.0 installs the pinned camera source and offline tests under
+Version0.3.0 installs the pinned camera source and offline tests under
 `/opt/sp7-research`. It is an **inactive research package**. It never installs
 or loads kernel modules, opens cameras, adds privilege, changes autostart,
 PAM/SDDM, firmware, Secure Boot, GRUB or Windows.
@@ -13,7 +13,7 @@ exact camera source commit pinned in `build_package.py`:
 ```sh
 python3 installer/build_package.py --camera-source /path/to/camera-checkout --output /path/to/new-output
 python3 installer/sp7_setup.py check
-python3 installer/sp7_setup.py plan --package /path/to/new-output/sp7-independent-workbench-0.2.0-x86_64.tar.gz --sha256 EXACT_PACKAGE_SHA256 --backup-root /path/to/verified-external/BACKUP/SP7-installer
+python3 installer/sp7_setup.py plan --package /path/to/new-output/sp7-independent-workbench-0.3.0-x86_64.tar.gz --sha256 EXACT_PACKAGE_SHA256 --backup-root /path/to/verified-external/BACKUP/SP7-installer
 ```
 
 The builder checks the exact camera SHA256SUMS file and each listed source
@@ -66,3 +66,8 @@ credentials and private conversations are absent. Linux-derived source retains
 GPLv2; standalone userspace and installer code retain GPLv3. The independent
 source remains experimental: persistent driver activation and a production
 camera controller still need their own recovery-tested integration.
+
+The optional nine-window RGB proposal candidate improves the second captured
+sequence from17/30 to25/30 at the same threshold, with29/30 on the first.
+This is exploratory analysis of the same two captures, not independent new
+physical validation. No identity or full-field person-exclusion claim follows.

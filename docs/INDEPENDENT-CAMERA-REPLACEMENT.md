@@ -2,7 +2,7 @@
 
 Status: experimental source checkpoint, 2026-11-02. This is not an installable face-authentication release.
 
-The exact camera source checkpoint is [876b5b1dbb5125d5ff878ff5b2d2671b2716e8e8](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/876b5b1dbb5125d5ff878ff5b2d2671b2716e8e8/replacement), proposed in [camera pull request 1](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/pull/1).
+The exact camera source checkpoint is [0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e/replacement), proposed in [camera pull request 1](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/pull/1).
 
 ## Replacement scope
 
@@ -45,3 +45,8 @@ Fixed-orientation filtering gave one diagnostic proposal in14/14 brighter IR
 frames in each capture. A central RGB proposal window gave29/30 and17/30;
 this remains insufficient for a login reliability claim. There is no identity
 match, geometric calibration, negative-participant study or verified PAD.
+
+The optional nine-window RGB proposal candidate improves the second captured
+sequence from17/30 to25/30 at the same threshold, with29/30 on the first.
+This is exploratory analysis of the same two captures, not independent new
+physical validation. No identity or full-field person-exclusion claim follows.

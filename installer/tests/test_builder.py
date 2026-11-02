@@ -9,7 +9,7 @@ class Tests(unittest.TestCase):
  def build(self,name='out'):
   with contextlib.redirect_stdout(io.StringIO()):return b.build(self.src,self.root/name)
  def test_valid_inactive_package(self):
-  m=self.build();self.assertEqual(m['activation'],dict(camera=False,drivers=False,login=False,autostart=False));self.assertEqual(m['version'],'0.2.0');self.assertNotIn('app/model.pb',m['files'])
+  m=self.build();self.assertEqual(m['activation'],dict(camera=False,drivers=False,login=False,autostart=False));self.assertEqual(m['version'],'0.3.0');self.assertNotIn('app/model.pb',m['files'])
  def test_changed_source_is_rejected_before_output(self):
   self.p.write_bytes(b'changed')
   with self.assertRaises(ValueError):self.build()
@@ -24,9 +24,9 @@ class Tests(unittest.TestCase):
   self.p.unlink();os.link(other,self.p)
   with self.assertRaises(ValueError):self.build()
  def test_output_cannot_replace_existing_package(self):
-  self.build();before=(self.root/'out/sp7-independent-workbench-0.2.0-x86_64.tar.gz').read_bytes()
+  self.build();before=(self.root/'out/sp7-independent-workbench-0.3.0-x86_64.tar.gz').read_bytes()
   with self.assertRaises(FileExistsError):self.build()
-  self.assertEqual((self.root/'out/sp7-independent-workbench-0.2.0-x86_64.tar.gz').read_bytes(),before)
+  self.assertEqual((self.root/'out/sp7-independent-workbench-0.3.0-x86_64.tar.gz').read_bytes(),before)
  def test_expected_manifest_still_rejects_path_escape(self):
   text='0'*64+'  ../outside\n';(self.src/'SHA256SUMS').write_text(text)
   with patch.object(b,'CAMERA_MANIFEST_SHA256',hashlib.sha256(text.encode()).hexdigest()):
