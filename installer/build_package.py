@@ -4,8 +4,8 @@
 import argparse,hashlib,json,os,stat
 from pathlib import Path
 import sp7_setup as s
-CAMERA_MANIFEST_SHA256 = '10f01ec3b8bac53e503383daa545384f9f1741746dc70b9b7860e84807e01bcd'
-CAMERA_COMMIT = '0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e'
+CAMERA_MANIFEST_SHA256 = '955e7bc46cc8623b1ad5076e065ebafabb1dd85ae504dd0737cf9f3cfb579a5d'
+CAMERA_COMMIT = '153d0e24b31c94de535ca9d06e9610d62ca06073'
 
 def build(source, output):
     source=Path(source).absolute();output=Path(output).absolute()
@@ -17,10 +17,10 @@ def build(source, output):
     for line in raw.decode().splitlines():
         h,n=line.split('  ',1);s.relative(n)
         if n in rows or len(h)!=64 or any(c not in '0123456789abcdef' for c in h):raise ValueError('Invalid checksum row')
-        if not(n in ['README.md','LICENSE','.gitignore'] or n.startswith(('replacement/','LICENSES/'))):raise ValueError('Unexpected source scope')
+        if not(n in ['README.md','LICENSE','.gitignore','THIRD_PARTY.md'] or n.startswith(('replacement/','LICENSES/','interface/','driver-build-kit/'))):raise ValueError('Unexpected source scope')
         rows[n]=h
     if len(rows)>s.MAX_FILES:raise ValueError('Source file-count limit')
-    total=0
+    total=0;omitted_kernel_files=0
     for n,h in rows.items():
         p=source/n
         for parent in p.parents:
@@ -41,13 +41,18 @@ def build(source, output):
         finally:os.close(fd)
         total+=len(data)
         if total>s.LIMIT:raise ValueError('Source size limit')
+        if n.startswith('driver-build-kit/'):
+            omitted_kernel_files+=1
+            continue
         files['app/'+n]=(data,0o755 if n.endswith('.sh') else 0o644)
-    files['app/SHA256SUMS']=(raw,0o644)
     files['app/tools/sp7_setup.py']=(Path(__file__).with_name('sp7_setup.py').read_bytes(),0o755)
-    m=dict(format=1,version='0.3.0',profile='inactive-workbench',compatibility=dict(distribution='manjaro',arch='x86_64',product='Surface Pro 7',kernel=s.KERNEL,python_min=[3,11],glibc_min=[2,38]),activation=dict(camera=False,drivers=False,login=False,autostart=False),camera_source_commit=CAMERA_COMMIT,files={n:dict(sha256=s.digest(d),mode=mode) for n,(d,mode) in files.items()})
+    files['app/SOURCE.json']=(s.encode(dict(camera_source_commit=CAMERA_COMMIT,full_checkout_manifest_sha256=CAMERA_MANIFEST_SHA256,verified_but_omitted_kernel_source_files=omitted_kernel_files,kernel_builds_belong_on_development_host=True)),0o644)
+    installed_sums=''.join(s.digest(d)+'  '+n[len('app/'):]+'\n' for n,(d,mode) in sorted(files.items()))
+    files['app/SHA256SUMS']=(installed_sums.encode(),0o644)
+    m=dict(format=1,version='0.4.0',profile='inactive-workbench',compatibility=dict(distribution='manjaro',arch='x86_64',product='Surface Pro 7',kernel=s.KERNEL,python_min=[3,11],glibc_min=[2,38]),activation=dict(camera=False,drivers=False,login=False,autostart=False),camera_source_commit=CAMERA_COMMIT,files={n:dict(sha256=s.digest(d),mode=mode) for n,(d,mode) in files.items()})
     files['manifest.json']=(s.encode(m),0o644);package=s.archive_bytes(files);s.load_package(package,s.digest(package))
     output.mkdir(parents=True,exist_ok=True)
-    dest=output/'sp7-independent-workbench-0.3.0-x86_64.tar.gz'
+    dest=output/'sp7-independent-workbench-0.4.0-x86_64.tar.gz'
     with dest.open('xb') as f:f.write(package);f.flush();os.fsync(f.fileno())
     checks=output/'SHA256SUMS'
     with checks.open('x') as f:f.write(s.digest(package)+'  '+dest.name+'\n');f.flush();os.fsync(f.fileno())

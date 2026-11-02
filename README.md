@@ -36,7 +36,7 @@ See [publication scope](docs/PUBLICATION.md), [workflow map](docs/WORKFLOWS.md),
 
 ## Independent camera replacement checkpoint — 2026-11-02
 
-The camera project now has an [experimental independent source checkpoint](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e/replacement) on a separate review branch. It replaces the inherited uncertain-license OV7251 additions with a new GPLv2 lifecycle layer on the licensed Linux baseline and uses a hash-bound UINT8 proposal backend without Caffe FP16 weights.
+The camera project now has an [experimental independent source checkpoint](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/153d0e24b31c94de535ca9d06e9610d62ca06073/replacement) on a separate review branch. It replaces the inherited uncertain-license OV7251 additions with a new GPLv2 lifecycle layer on the licensed Linux baseline and uses a hash-bound UINT8 proposal backend without Caffe FP16 weights.
 
 Physical object and two new presence-authorized face captures, plus bounded three-gate timer evidence, are recorded there. The [inactive workbench installer](installer/README.md) provides VM-tested source installation, upgrade, uninstall and rollback. Persistent driver installation, production controller migration and authentication/PAD validation remain pending. See [the integration boundary](docs/INDEPENDENT-CAMERA-REPLACEMENT.md) before adapting the source. The historical system workflows above remain a distinct snapshot.
 
@@ -45,3 +45,22 @@ The optional nine-window RGB proposal candidate improves the second captured
 sequence from17/30 to25/30 at the same threshold, with29/30 on the first.
 This is exploratory analysis of the same two captures, not independent new
 physical validation. No identity or full-field person-exclusion claim follows.
+
+The pinned source now includes the bounded client-inventory fix and clear
+left/right presence prompts (English public counterpart), plus the reviewed
+MIT HAL-inspired interface/geometry prototype. `preview` opens only its
+labelled simulation as an ordinary user. No theme or authentication service
+is installed or enabled. Two new directional capture cycles passed complete
+teardown/restoration checks; RGB spatial proposals were29/30 on both sides.
+IR full-frame detection remains unreliable away from centre, and an IR tiling
+experiment produced extra proposals and was rejected as the default. Physical
+calibration and a qualified IR/biometric backend are still required.
+
+The separate driver-build-kit provides all seven source modules, license
+texts, exact upstream provenance and the reviewed dated changes. Its753IPU4
+files match the recorded runtime source except approved notices/blank lines.
+Fresh compiled identities are not all the recorded runtime identities, so
+no controller rebind or physical equivalence is inferred. Kernel builds stay
+on the development host. The source builder verifies the full pinned checkout
+but omits the780-file kernel build kit from the device payload; SOURCE.json
+records that boundary and the package has its own installed-file checksums.

@@ -1,6 +1,6 @@
 # Independent SP7 workbench installer
 
-Version0.3.0 installs the pinned camera source and offline tests under
+Version0.4.0 installs the pinned camera source and offline tests under
 `/opt/sp7-research`. It is an **inactive research package**. It never installs
 or loads kernel modules, opens cameras, adds privilege, changes autostart,
 PAM/SDDM, firmware, Secure Boot, GRUB or Windows.
@@ -13,7 +13,7 @@ exact camera source commit pinned in `build_package.py`:
 ```sh
 python3 installer/build_package.py --camera-source /path/to/camera-checkout --output /path/to/new-output
 python3 installer/sp7_setup.py check
-python3 installer/sp7_setup.py plan --package /path/to/new-output/sp7-independent-workbench-0.3.0-x86_64.tar.gz --sha256 EXACT_PACKAGE_SHA256 --backup-root /path/to/verified-external/BACKUP/SP7-installer
+python3 installer/sp7_setup.py plan --package /path/to/new-output/sp7-independent-workbench-0.4.0-x86_64.tar.gz --sha256 EXACT_PACKAGE_SHA256 --backup-root /path/to/verified-external/BACKUP/SP7-installer
 ```
 
 The builder checks the exact camera SHA256SUMS file and each listed source
@@ -71,3 +71,22 @@ The optional nine-window RGB proposal candidate improves the second captured
 sequence from17/30 to25/30 at the same threshold, with29/30 on the first.
 This is exploratory analysis of the same two captures, not independent new
 physical validation. No identity or full-field person-exclusion claim follows.
+
+The pinned source now includes the bounded client-inventory fix and clear
+left/right presence prompts (English public counterpart), plus the reviewed
+MIT HAL-inspired interface/geometry prototype. `preview` opens only its
+labelled simulation as an ordinary user. No theme or authentication service
+is installed or enabled. Two new directional capture cycles passed complete
+teardown/restoration checks; RGB spatial proposals were29/30 on both sides.
+IR full-frame detection remains unreliable away from centre, and an IR tiling
+experiment produced extra proposals and was rejected as the default. Physical
+calibration and a qualified IR/biometric backend are still required.
+
+The separate driver-build-kit provides all seven source modules, license
+texts, exact upstream provenance and the reviewed dated changes. Its753IPU4
+files match the recorded runtime source except approved notices/blank lines.
+Fresh compiled identities are not all the recorded runtime identities, so
+no controller rebind or physical equivalence is inferred. Kernel builds stay
+on the development host. The source builder verifies the full pinned checkout
+but omits the780-file kernel build kit from the device payload; SOURCE.json
+records that boundary and the package has its own installed-file checksums.

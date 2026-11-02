@@ -1,16 +1,16 @@
 {
   "date": "2026-11-02",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "profile": "inactive-workbench",
-  "camera_source_commit": "0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e",
-  "source_manifest_sha256": "10f01ec3b8bac53e503383daa545384f9f1741746dc70b9b7860e84807e01bcd",
-  "package_sha256": "174c86b79882d9b60cd22067779b1c167aed7dc94e8fb2b60ce58a4104fa1b58",
-  "package_bytes": 73158,
+  "camera_source_commit": "153d0e24b31c94de535ca9d06e9610d62ca06073",
+  "source_manifest_sha256": "955e7bc46cc8623b1ad5076e065ebafabb1dd85ae504dd0737cf9f3cfb579a5d",
+  "package_sha256": "d7511edb0ba1a06c4da1474d920e52d5b9debf1e390690986a4a7ffb19e34d30",
+  "package_bytes": 115085,
   "VM_root_installer_tests": 39,
-  "VM_root_builder_tests": 6,
-  "VM_installed_Python_tests_total": 65,
+  "VM_root_builder_tests": 7,
+  "VM_installed_Python_tests_total": 161,
   "VM_installed_Python_root_only_skips": 18,
-  "VM_installed_effective_nonroot_Python_tests": 47,
+  "VM_installed_effective_nonroot_Python_tests": 143,
   "VM_C_gate_and_session_assertions": 4883,
   "VM_install_uninstall_restore": true,
   "VM_network": false,
@@ -26,5 +26,27 @@
   "secure_biometrics_or_PAD_verified": false,
   "actual_0_2_to_0_3_upgrade_and_rollback": true,
   "spatial_RGB_tests": 7,
-  "spatial_RGB_new_physical_validation": false
+  "spatial_RGB_new_physical_validation": false,
+  "VM_root_preview_boundary_tests": 2,
+  "actual_0_3_to_0_4_upgrade_and_rollback": true,
+  "kernel_source_checkout_files_verified_but_omitted": 780,
+  "device_package_files": 78,
+  "QML_local_offscreen_tests": 25,
+  "geometry_local_synthetic_tests": 35,
+  "new_left_right_captures_original_passed": true,
+  "new_reader_VM_tests": 79,
+  "new_helper_VM_tests": 28,
+  "new_direction_presence_VM_tests": 26,
+  "new_reader_normal_desktop_passive_samples": 20,
+  "physical_RGB_spatial_single_proposals": [
+    29,
+    29
+  ],
+  "physical_IR_filtered_full_frame_single_proposals": [
+    14,
+    0
+  ],
+  "IR_tiling_candidate_adopted": false,
+  "production_controller_or_driver_activation": false,
+  "authentication_activated": false
 }

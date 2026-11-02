@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-3.0-only
 """Offline, inactive independent SP7 workbench with external rollback snapshots.
-Project changes 2026-11-02: independent payload, removed obsolete preview path."""
+Project changes 2026-11-02: independent payload and explicit nonroot MIT interface demo."""
 import argparse
 import contextlib
 import fcntl
@@ -483,7 +483,7 @@ class Installer:
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command', choices=['check', 'plan', 'install', 'status', 'uninstall',
-                                          'rollback', 'offline-tests'])
+                                          'rollback', 'preview', 'offline-tests'])
     parser.add_argument('--package', type=Path)
     parser.add_argument('--sha256')
     parser.add_argument('--backup-root', default=BACKUP)
@@ -521,6 +521,10 @@ def main(argv=None):
         current = manager.current()
         require(current is not None, 'Nothing is installed')
         app = manager.base / current['release'] / 'app'
+        if args.command == 'preview':
+            program = Path('/usr/lib/qt6/bin/qml')
+            require(program.is_file(), 'Qt 6 Declarative is missing')
+            os.execv(str(program), [str(program), str(app / 'interface/ui/Demo.qml')])
         os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
         os.execv('/bin/sh', ['/bin/sh', str(app / 'replacement/run-offline-tests.sh')])
     print(json.dumps(result, indent=2))

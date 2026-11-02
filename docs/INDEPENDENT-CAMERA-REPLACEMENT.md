@@ -2,7 +2,7 @@
 
 Status: experimental source checkpoint, 2026-11-02. This is not an installable face-authentication release.
 
-The exact camera source checkpoint is [0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/0fa82a627fb78e9ea63cb6be68a8d4a727f5e48e/replacement), proposed in [camera pull request 1](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/pull/1).
+The exact camera source checkpoint is [153d0e24b31c94de535ca9d06e9610d62ca06073](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/tree/153d0e24b31c94de535ca9d06e9610d62ca06073/replacement), proposed in [camera pull request 1](https://github.com/BogeBear/Microsoft-Surface-Pro-7-Face-ID/pull/1).
 
 ## Replacement scope
 
@@ -50,3 +50,22 @@ The optional nine-window RGB proposal candidate improves the second captured
 sequence from17/30 to25/30 at the same threshold, with29/30 on the first.
 This is exploratory analysis of the same two captures, not independent new
 physical validation. No identity or full-field person-exclusion claim follows.
+
+The pinned source now includes the bounded client-inventory fix and clear
+left/right presence prompts (English public counterpart), plus the reviewed
+MIT HAL-inspired interface/geometry prototype. `preview` opens only its
+labelled simulation as an ordinary user. No theme or authentication service
+is installed or enabled. Two new directional capture cycles passed complete
+teardown/restoration checks; RGB spatial proposals were29/30 on both sides.
+IR full-frame detection remains unreliable away from centre, and an IR tiling
+experiment produced extra proposals and was rejected as the default. Physical
+calibration and a qualified IR/biometric backend are still required.
+
+The separate driver-build-kit provides all seven source modules, license
+texts, exact upstream provenance and the reviewed dated changes. Its753IPU4
+files match the recorded runtime source except approved notices/blank lines.
+Fresh compiled identities are not all the recorded runtime identities, so
+no controller rebind or physical equivalence is inferred. Kernel builds stay
+on the development host. The source builder verifies the full pinned checkout
+but omits the780-file kernel build kit from the device payload; SOURCE.json
+records that boundary and the package has its own installed-file checksums.
