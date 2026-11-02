@@ -69,3 +69,15 @@ no controller rebind or physical equivalence is inferred. Kernel builds stay
 on the development host. The source builder verifies the full pinned checkout
 but omits the780-file kernel build kit from the device payload; SOURCE.json
 records that boundary and the package has its own installed-file checksums.
+
+
+## Later inactive identity and coordinate research
+
+The camera repository now also contains an inactive `identity-research` module.
+It tests a one-use attempt contract and password fallback against real Linux-PAM
+without changing production configuration. A separate IR mirror-coordinate
+candidate restores generic proposals in an already-captured side-position
+sequence. It still requires new physical qualification, and has no identity/PAD
+backend. This follow-up is not silently incorporated into workbench 0.4, which
+remains pinned to its exact earlier source commit and tested archive checksum.
+No package update, camera activation or PAM deployment is implied by these docs.

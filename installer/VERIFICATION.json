@@ -26,7 +26,7 @@
   "secure_biometrics_or_PAD_verified": false,
   "actual_0_2_to_0_3_upgrade_and_rollback": true,
   "spatial_RGB_tests": 7,
-  "spatial_RGB_new_physical_validation": false,
+  "spatial_RGB_new_physical_validation": true,
   "VM_root_preview_boundary_tests": 2,
   "actual_0_3_to_0_4_upgrade_and_rollback": true,
   "kernel_source_checkout_files_verified_but_omitted": 780,
@@ -48,5 +48,13 @@
   ],
   "IR_tiling_candidate_adopted": false,
   "production_controller_or_driver_activation": false,
-  "authentication_activated": false
+  "authentication_activated": false,
+  "later_inactive_ID_followup_in_0_4_payload": false,
+  "IR_mirror_offline_candidate_single_proposals": [
+    14,
+    14,
+    14,
+    14
+  ],
+  "IR_mirror_fresh_physical_retest_pending": true
 }
