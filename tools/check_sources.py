@@ -4,6 +4,7 @@ import ast,subprocess,sys
 from pathlib import Path
 root=Path(__file__).resolve().parents[1];bad=[];count=0
 for p in sorted((root/'integration').rglob('*')):
+ if not p.is_file(): continue
  if p.suffix=='.py':
   try:ast.parse(p.read_text(),filename=str(p.relative_to(root)));count+=1
   except SyntaxError as e:bad.append(str(e))
